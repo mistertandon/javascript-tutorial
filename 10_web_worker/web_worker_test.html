@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        if (window.Worker) {
+
+            var myWorker = new Worker('worker.js')
+            // Here we'll ask Web Worker to add two numbers.
+            var message = {
+                'addition_parameter': {
+                    'addend_i': 5,
+                    'addend_ii': 15
+                }
+            }
+            myWorker.postMessage(message);
+
+            myWorker.onmessage = (event) => {
+
+                console.log(`Result : ${event.data.sum}`);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h4>How web worker works: Quick insight</h4>
+</body>
+
+</html>
