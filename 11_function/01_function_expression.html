@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        var executeFE = function () {
+            console.log('Function expression got called.')
+        }
+
+        var getSumFromFE = function () {
+
+            let isArgumentsPassed;
+            var sum = 0;
+
+            isArgumentsPassed = arguments.length > 0 ? true : false;
+
+            if (isArgumentsPassed) {
+
+                for (let i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+            }
+            console.log(`Sum of passed arguments is : ${sum}`);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <input type='button' value='invoke FE' onClick='executeFE()' />
+        </div>
+        <div>
+            <input type='button' value='invoke FE' onClick='getSumFromFE(10, 11, 12)' />
+        </div>
+    </div>
+</body>
+
+</html>
