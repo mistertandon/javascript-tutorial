@@ -19,4 +19,18 @@
 
     let sumResult = getSum.call(addendParameters, 5);
     console.log(sumResult)
+
+    var getSumImplicitly = function () {
+
+        let addends = [].slice.call(arguments)
+
+        let sumResult = addends.reduce( (accumulator, currentValue) => {
+
+            return accumulator + currentValue;
+        })
+        console.log(sumResult)
+    }
+
+    getSumImplicitly(1, 23, 4, 5);
+
 })()
