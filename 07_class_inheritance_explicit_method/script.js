@@ -73,23 +73,24 @@ var TerrestrialAnimalClass = (function (document, window, AnimalClass) {
         this.runningMPH = runningMPH;
     }
 
-
-    
-
     /**
      * Below cod block stres reference for terrestrialAnimal constructor.
      */
     terrestrialAnimal.prototype.constructor = terrestrialAnimal;
 
     /**
-     * Below code block inherit AnimalClass into terrestrialAnimal.
+     * Below code block demonstrate how terrestrialAnimal extends
+     * AnimalClass.
+     * 
+     * Note: `Object.create` creates a new object with the
+     * prototype set to a new object.
      */
     terrestrialAnimal.prototype = Object.create(AnimalClass.prototype, terrestrialAnimal.prototype);
 
-    terrestrialAnimal.prototype.runningCharateristic =  function () {
+    terrestrialAnimal.prototype.runningCharateristic = function () {
 
-            console.log(this._animalName + ' is able to run at ' + this.runningMPH + ' MPH');
-        }
+        console.log(this._animalName + ' is able to run at ' + this.runningMPH + ' MPH');
+    }
     return terrestrialAnimal;
 
 })(document, window, AnimalClass);
