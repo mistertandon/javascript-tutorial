@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+
+        const countArr = [1, 2, 3, 4, 5];
+
+        countArr.forEach((currentVal, currentIndex, arrRef) => {
+
+            arrRef[currentIndex] = parseInt(currentVal, 10) * 5;
+            console.log(`currentVal : ${currentVal}, currentIndex : ${currentIndex}, arrRef: ${JSON.stringify(arrRef, null, 2)}`)
+        })
+
+    </script>
+</head>
+
+<body>
+    <h4>array.foreach</h4>
+    <p>Applies a function on foreach item in an array.</p>
+    <a href="index.html">Go oto array methods list</a>
+</body>
+
+</html>

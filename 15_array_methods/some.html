@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script>
+        const userPrivileges = ['user', 'user', 'user', 'admin'];
+        
+        console.log(JSON.stringify(userPrivileges, null, 2));
+
+        const isAdminPriviliged = userPrivileges.some(userPrivilege => userPrivilege === 'admin')
+        console.log(`isAdminPriviliged : ${isAdminPriviliged}`);
+    </script>
+</head>
+
+<body>
+    <h4>array.some</h4>
+    <p>Checks if any item in an array passes the condition.</p>
+    <a href="index.html">Go oto array methods list</a>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        const evenNumersArr = [2, 4, 6, 8, 10];
+        const mixNumersArr = [1, 2, 45, 43, 6];
+
+        console.log(`evenNumersArr : ${JSON.stringify(evenNumersArr, null, 1)}`);
+        console.log(`mixNumersArr : ${JSON.stringify(mixNumersArr, null, 1)}`);
+
+        let isPureEvenNumers = evenNumersArr.every(numberVal => numberVal % 2 == 0);
+        console.log(`isPureEvenNumers: ${isPureEvenNumers}`);
+
+        isPureEvenNumers = mixNumersArr.every(numberVal => numberVal % 2 == 0);
+        console.log(`isPureEvenNumers: ${isPureEvenNumers}`);
+    </script>
+</head>
+
+<body>
+    <h4>array.every</h4>
+    <p>Checks if all items in an array passes the condition.</p>
+    <a href="index.html">Go oto array methods list</a>
+</body>
+
+</html>
