@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+
+        const countArr = [1, 2, 3, 4, 5];
+        const addCountResult = countArr.reduce(
+            (accumulator, currentVal, currentIndex, arrayRef) => {
+
+                return accumulator += currentVal
+            }, 5)
+
+        console.log(addCountResult);
+    </script>
+</head>
+
+<body>
+    <h4>array.reduce</h4>
+    <p>Reduce all items in an array to a single value.</p>
+    <a href="index.html">Go oto array methods list</a>
+</body>
+
+</html>
