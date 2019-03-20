@@ -1,1 +1,1 @@
-#### JavaScript Array methods
+#### JavaScript Array methods list
