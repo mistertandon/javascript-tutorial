@@ -1,7 +1,7 @@
-var CharaterRecognization = function (character) {
+var CharacterRecognization = function (character) {
 
     // var regEx : It acts as a private variable.
-    // Instance of CharaterRecognization class can't access this variable.
+    // Instance of CharacterRecognization class can't access this variable.
     var regEx = {'uppercase': /[A-Z]/, 'lowercase': /[a-z]/, 'number': /[0-9]/};
     this.charactersStack = [];
 
@@ -38,7 +38,7 @@ var CharaterRecognization = function (character) {
     }
 }
 
-CharaterRecognization.prototype._displayResult = function (dataType) {
+CharacterRecognization.prototype._displayResult = function (dataType) {
 
     console.log('input charater was ' + dataType + ' character.');
 
@@ -47,7 +47,7 @@ CharaterRecognization.prototype._displayResult = function (dataType) {
 
 var technology = function (inputCharater) {
 
-    return new CharaterRecognization(inputCharater);
+    return new CharacterRecognization(inputCharater);
 }
 
 
