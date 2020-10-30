@@ -74,7 +74,7 @@ var TerrestrialAnimalClass = (function (document, window, AnimalClass) {
     }
 
     /**
-     * Below cod block stres reference for terrestrialAnimal constructor.
+     * Below code block sets reference for terrestrialAnimal constructor.
      */
     terrestrialAnimal.prototype.constructor = terrestrialAnimal;
 
