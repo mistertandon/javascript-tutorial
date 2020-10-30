@@ -19,7 +19,7 @@ var technology = function(technologyName, licenseName){
 var myTechnology = '';
 var instanceValidation_a = '';
 var instanceValidation_b = '';
-myTechnology = technology('node', 'MIT');
+myTechnology = new technology('node', 'MIT');
 
 instanceValidation_a = myTechnology instanceof Technology;
 instanceValidation_b = myTechnology instanceof Array;
