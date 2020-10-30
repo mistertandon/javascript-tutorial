@@ -2,7 +2,7 @@ var CharacterRecognization = function (character) {
 
     // var regEx : It acts as a private variable.
     // Instance of CharacterRecognization class can't access this variable.
-    var regEx = {'uppercase': /[A-Z]/, 'lowercase': /[a-z]/, 'number': /[0-9]/};
+    var regEx = { 'uppercase': /[A-Z]/, 'lowercase': /[a-z]/, 'number': /[0-9]/ };
     this.charactersStack = [];
 
     Object.defineProperty(this, '_compRes', {
@@ -10,13 +10,12 @@ var CharacterRecognization = function (character) {
         enumerable: true,
         get: function () {
 
-            console.log('All tested characters are = ' + this.charactersStack);
+            console.log('All tested characters are = ' + JSON.stringify(this.charactersStack, null, 3));
         },
         set: function (cTestChar) {
 
             this.charactersStack.push(cTestChar);
         }
-
     });
 
     this._inputChar = character;
