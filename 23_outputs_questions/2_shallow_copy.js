@@ -18,3 +18,15 @@ copiedPerson.address.street = 'Amphitheatre Parkway'; // connected
 copiedPerson.address.city = 'Mountain View'; // connected
 
 console.log(copiedPerson);
+/**
+ * {
+ *   address: {
+ *      street: "Amphitheatre Parkway",
+ *     city: "Mountain View",
+ *       state: "CA",
+ *       country: "USA"
+ *   }
+ *   firstName: "Jane"
+ *   lastName: "Doe"
+ * }
+ **/
