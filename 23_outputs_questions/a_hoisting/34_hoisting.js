@@ -5,8 +5,9 @@ var obj = {
     childObj: {
         c: 3,
         add: function () {
-            console.log(this.a + ' ' + this.b + ' ' + this.c);
+            console.log(this.a + ' ' + this.b + ' ' + this.c); // undefined undefined 3
+            console.log(this.a + this.b + this.c); // NaN
         }
     }
 }
-obj.childObj.add();// undefined undefined 3
+obj.childObj.add();

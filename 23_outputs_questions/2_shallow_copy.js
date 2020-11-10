@@ -30,3 +30,17 @@ console.log(copiedPerson);
  *   lastName: "Doe"
  * }
  **/
+
+console.log(person);
+/**
+ * {
+ *   address: {
+ *      street: "Amphitheatre Parkway",
+ *     city: "Mountain View",
+ *       state: "CA",
+ *       country: "USA"
+ *   }
+ *   firstName: "Jane"
+ *   lastName: "Doe"
+ * }
+ **/
