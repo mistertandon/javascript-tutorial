@@ -7,4 +7,4 @@ function x() {
 x();
 
 console.log(y); // 1, Since, y is Undeclared variable which is always global.
-console.log(z); // z is not defined.
+console.log(z); // ReferenceError: z is not defined

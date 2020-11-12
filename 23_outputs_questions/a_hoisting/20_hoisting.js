@@ -1,5 +1,6 @@
 if (true) {
     
     let foo = "abc";
-    let foo; // SyntaxError thrown. Re-declaration is not allowed.
+    
+    let foo; // SyntaxError: Identifier 'foo' has already been declared
 }

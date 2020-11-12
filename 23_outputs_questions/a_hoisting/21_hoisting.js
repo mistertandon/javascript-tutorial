@@ -3,4 +3,4 @@ if (true) {
     let foo = "abc";
 }
 
-console.log(foo); // foo is not defined
+console.log(foo); // ReferenceError: foo is not defined

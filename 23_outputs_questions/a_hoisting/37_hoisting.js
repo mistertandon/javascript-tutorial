@@ -1,14 +1,16 @@
 /**
  * Block 1
  */
+var a = 1;
+
 function hoistingExample() {
 
-    a = 1;
+    console.log(a);
 }
 
 hoistingExample();
 
-console.log(a); // ReferenceError: a is not defined
+console.log(a); 
 
 /**
  * Block 2
@@ -19,4 +21,4 @@ function hoistingExample() {
 }
 
 hoistingExample();
-console.log(a); // ReferenceError: a is not defined
+console.log(a); // 
