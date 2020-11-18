@@ -1,6 +1,7 @@
 // Hoisted code
 function functionDeclaration() {
-    console.log('Hoisted')
+
+    console.log('Hoisted'); // output: "Hoisted"
 }
 
-functionDeclaration() // output: "Hoisted"
+functionDeclaration();

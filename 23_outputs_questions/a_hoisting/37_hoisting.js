@@ -5,12 +5,12 @@ var a = 1;
 
 function hoistingExample() {
 
-    console.log(a);
+    console.log(a); // 1
 }
 
 hoistingExample();
 
-console.log(a); 
+console.log(a); // 1
 
 /**
  * Block 2
@@ -21,4 +21,4 @@ function hoistingExample() {
 }
 
 hoistingExample();
-console.log(a); // 
+console.log(a); // undefined

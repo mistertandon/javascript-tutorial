@@ -8,7 +8,7 @@ function hoistingExample() {
 
 hoistingExample();
 
-console.log(a); // ReferenceError: a is not defined
+console.log(a); // 1
 
 /**
  * Block 2

@@ -1,4 +1,5 @@
-functionDeclaration() // output: "Hoisted"
+functionDeclaration() 
 function functionDeclaration() {
-  console.log('Hoisted')
+
+  console.log('Hoisted'); // output: "Hoisted"
 }
