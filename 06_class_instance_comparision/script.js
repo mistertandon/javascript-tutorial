@@ -31,7 +31,7 @@ myTechnology_ab = (myTechnology_a == myTechnology_b)?true:false;
 console.log('Object myTechnology_a and myTechnology_b are equal : ' + myTechnology_ab);
 myTechnology_c = myTechnology_b
 myTechnology_bc = (myTechnology_b == myTechnology_c)?true:false;
-console.log('Object myTechnology_c having reference to myTechnology_b, is they are equal : ' + myTechnology_bc);
+console.log('Object myTechnology_c having reference to myTechnology_b, are they equal : ' + myTechnology_bc);
 
 
 

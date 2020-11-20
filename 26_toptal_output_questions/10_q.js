@@ -11,7 +11,7 @@ function updateAge() {
 }
 updateAge();
 
-console.log(age);
+console.log(age); // 32
 
 /**
  * Block 2
@@ -25,4 +25,4 @@ function updateName() {
 
 updateName();
 
-console.log(name);
+console.log(name); // parvesh

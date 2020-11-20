@@ -19,3 +19,4 @@ console.log(item_ii) // {'car': 211, 'scooter': 311};
 delete item_ii['car']; // true
 
 console.log(item_i); // {car: 21, scooter: 3}
+console.log(item_ii); // {car: 21, scooter: 3}
