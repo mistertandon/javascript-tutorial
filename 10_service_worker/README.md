@@ -1,0 +1,1 @@
+> The Navigator.serviceWorker read-only property returns the ServiceWorkerContainer object for the associated document, which provides access to registration, removal, upgrade, and communication with the ServiceWorker.
