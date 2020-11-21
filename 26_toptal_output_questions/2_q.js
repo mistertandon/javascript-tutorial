@@ -21,5 +21,5 @@
     var a = b = 3;
 })();
 
-console.log("a defined? " + (typeof a === 'undefined')); // true
-console.log("b defined? " + (typeof b === 'undefined')); // false
+console.log("a undefined? " + (typeof a === 'undefined')); // true
+console.log("b undefined? " + (typeof b === 'undefined')); // false
