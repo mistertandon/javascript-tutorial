@@ -19,6 +19,6 @@ const favouriteAuthors = {
     }
 }
 
-for (const author of myFavouriteAuthors) {
+for (const author in favouriteAuthors) {
     console.log(author);
   }

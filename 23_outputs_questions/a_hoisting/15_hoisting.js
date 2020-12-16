@@ -3,6 +3,7 @@ var test = 1;
 function functionHoisting() {
 
     console.log('Before update global variable: ', test); // function test() { }
+    console.log(typeof test); // function
 
     test = 10;
 

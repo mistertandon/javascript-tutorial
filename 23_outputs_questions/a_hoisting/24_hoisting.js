@@ -4,7 +4,7 @@ if (true) {
 
     if(true){
 
-      console.log(foo);
+      console.log(foo); // abc
     }
     foo = "xyz"; // TypeError: Assignment to constant variable. Can't be updated
   }

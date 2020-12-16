@@ -5,6 +5,7 @@ function functionHoisting() {
     //function Hoisting, test is re-defined and re-declared
     
     console.log(test); // [Function: test]]
+    console.log(typeof test); // function
 
     test = 10;
 
