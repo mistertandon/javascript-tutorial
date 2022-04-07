@@ -29,3 +29,16 @@ const calcSum = (...fns_iii) => {
     };
   };
 };
+
+const optimizedCalcSum =
+  (...fns_iii) =>
+  (...fns_ii) =>
+  (...fns_i) => {
+    var operandList = fns_iii.concat(fns_ii, fns_i);
+
+    return operandList.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+  };
+optimizedCalcSum(2)(3)(4);
