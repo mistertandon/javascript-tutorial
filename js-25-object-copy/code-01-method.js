@@ -34,3 +34,7 @@ copiedObj.b.c = 20;
 console.log('Original Object: ', obj);
 console.log('Copied Object: ', copiedObj);
 
+/**
+ * Another way is to use structuredClone method
+ * For more info kindly refer - https://web.dev/structured-clone/
+ */
