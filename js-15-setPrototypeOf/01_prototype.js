@@ -11,6 +11,10 @@ let dog = {
     sound: 'bark!'
 }
 
+/**
+ * The Object.setPrototypeOf() static method sets the prototype (i.e., the internal [[Prototype]] property)
+ *  of a specified object to another object or null.
+ */
 Object.setPrototypeOf(dog, animal);
 dog.talk();
 

@@ -26,3 +26,10 @@ instanceValidation_b = myTechnology instanceof Array;
 
 console.log('myTechnology is instance of Technology class : '+instanceValidation_a);
 console.log('myTechnology is instance of Technology Array : '+instanceValidation_b);
+
+/**
+ * Output
+ *
+ * myTechnology is instance of Technology class : true
+ * script.js:28 myTechnology is instance of Technology Array : false
+ */

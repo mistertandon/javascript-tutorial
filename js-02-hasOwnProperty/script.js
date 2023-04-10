@@ -25,7 +25,7 @@ console.log(myTechnology.displayInfo());
  * Developing javascript code to determine property authenticity in context to
  * particular object.
  */
-var frameworkNameProp = myTechnology.hasOwnProperty('frameworkName')
+var frameworkNameProp = myTechnology.hasOwnProperty('frameworkName');
 document.write('\'frameworkName\' property exists into myTechnology. :'+frameworkNameProp+'<br>');
 
 var displayInfoProp = myTechnology.hasOwnProperty('displayInfo');
@@ -36,3 +36,14 @@ document.write('\'anonymous\' property exists into Technology object : '+anonymo
 
 var licenseNamePropExist = 'licenseName' in myTechnology;
 document.write('\'licenseName\' property exists into Technology object : '+licenseNamePropExist+'<br>');
+
+
+/**
+ * Output
+ * 
+ * 'frameworkName' property exists into myTechnology. :true
+ * 'displayInfo' property exists into Technology object : false. It is prototype chain property.
+ * 'anonymous' property exists into Technology object : false
+ * 'licenseName' property exists into Technology object : true Javascript OOP\'s concept - hasOwnProperty
+ *
+ */

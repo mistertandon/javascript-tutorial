@@ -10,7 +10,7 @@ One of them is to use the special name __proto__, like this:
 
 ```javascript
   let animal = {
-    eats: true
+    eats: truebbb
   };
   let rabbit = {
     jumps: true
