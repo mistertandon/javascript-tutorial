@@ -1,20 +1,11 @@
 /**
- * But in fact, var a = b = 3; is actually shorthand for:
+ * Here's what's happening step-by-step:
  *
- *  b = 3;
- *  var a = b;
- *  As a result (if you are not using strict mode), the output of the code snippet would be:
+ * > The right-most b = 3 assignment is evaluated first, which assigns the value 3 to the global variable b.
  *
- *  a defined? false
- *  b defined? true
- * 
- *  But how can b be defined outside of the scope of the enclosing function? Well,
- *  since the statement var a = b = 3; is shorthand for the statements b = 3; and var a = b;,
- *  b ends up being a global variable (since it is not preceded by the var keyword)
- *  and is therefore still in scope even outside of the enclosing function.
+ * > Then, the var a declaration is evaluated, which declares a new variable a in the current scope.
  *
- *  Note that, in strict mode (i.e., with use strict), the statement var a = b = 3;
- *  will generate a runtime error of ReferenceError: b is not defined
+ * > Finally, the left-most a = b assignment is evaluated, which assigns the value of b (which is 3) to the variable a.
  */
 (function () {
 
